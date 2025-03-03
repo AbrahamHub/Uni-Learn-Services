@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  crud-service:
+    image: uni-learn/crud:prod
+    build:
+      context: ./CRUD
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    networks:
+      - uni-learn-net
+
+networks:
+  uni-learn-net:
+    driver: bridge
