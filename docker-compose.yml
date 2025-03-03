@@ -4,8 +4,8 @@ services:
   crud-service:
     image: uni-learn/crud:prod
     build:
-      context: ./CRUD
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: CRUD/Dockerfile
     ports:
       - "8080:80"
     networks:

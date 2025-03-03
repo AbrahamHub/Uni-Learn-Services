@@ -1,7 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-COPY ../Uni-Learn-Services.sln ./
 COPY . .
 WORKDIR /app/CRUD
 RUN dotnet restore
